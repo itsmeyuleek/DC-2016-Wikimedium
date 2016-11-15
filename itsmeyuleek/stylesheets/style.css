@@ -5,6 +5,9 @@
 @import "sidebar.css";
 @import "menubar.css";
 
+/*landing*/
+@import "landing.css";
+
 /*post*/
 @import "layout.css";
 @import "content.css";
