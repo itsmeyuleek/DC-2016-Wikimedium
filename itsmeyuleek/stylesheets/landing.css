@@ -1,3 +1,13 @@
+body.landing.bg {
+  background-image: url(../images/index_mockup_ipad.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+body.landing * {
+  transition: all .3s ease;
+}
+
 .landingWrapper {
   position: relative;
   display: flex;
@@ -6,7 +16,6 @@
   overflow: hidden;
 
   width: 1440px;
-  min-width: 1280px;
   margin: 0 auto;
   box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
 
@@ -18,8 +27,9 @@
   height: 800px;
   overflow: hidden;
 }
+
 .mainSection h2 {
-  font-family: 'PT Sans Caption', sans-serif;
+  font-family: "PT Sans Caption", sans-serif;
   font-size: 36px;
   line-height: 46px;
 }
@@ -101,8 +111,79 @@
 
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1460px) {
   .landingWrapper {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 1180px) {
+  body.landing.bg {
+    background-image: url(../images/index_mockup_ipad.png);
+  }
+}
+
+.landingWrapper {
+  width: 100%;
+}
+
+.mainSection h2 {
+  font-size: 26px;
+  line-height: 32px;
+}
+
+.mainSection p {
+  margin-top: 18px;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+  .mainSection {
+    width: 1180px;
+    height: 568px;
+  }
+
+  .mainSection section {
+    top: 105px;
+    width: 410px;
+  }
+
+  .mainSection.left section {
+    left: 190px;
+  }
+
+  .mainSection.right section {
+    right: 190px;
+  }
+
+  .mainSection section figure {
+    width: 147px;
+    height: 14px;
+    margin-top: 100px;
+  }
+
+  .mainSection.left section figure {
+    margin-left: -40px;
+  }
+
+  .mainSection.right section figure {
+    margin-left: 303px;
+  }
+
+  #mockup1 {
+    top: 85px;
+    right: 0;
+    width: 521px;
+    height: 470px;
+  }
+
+  #mockup2 {
+    top: 70px;
+    left: 148px;
+    width: 380px;
+    height: 478px;
+  }
+
+  #mockup3 {
+
+  }
