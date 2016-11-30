@@ -4,7 +4,10 @@
 }
 
 .galleryRail {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
@@ -21,9 +24,15 @@
 
 .galleryNav {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   height: calc(100% - 51px);
 }
@@ -70,9 +79,11 @@
 }
 
 #prev {
+  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
 #next {
+  -webkit-transform: rotate(135deg);
   transform: rotate(135deg);
 }
