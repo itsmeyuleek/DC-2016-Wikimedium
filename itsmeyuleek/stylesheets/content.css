@@ -14,6 +14,7 @@ article > *:not(section) {
 article h1,
 article h2,
 article h3,
+article h4,
 article p,
 article ul,
 article blockquote {
@@ -23,7 +24,8 @@ article blockquote {
 
 article h1,
 article h2,
-article h3 {
+article h3,
+article h4 {
   font-family: 'PT Sans Caption',sans-serif;
   font-weight: bold;
 }
@@ -58,7 +60,14 @@ article h3 {
   line-height: 34px;
 }
 
-article h3 + p {
+article h4 {
+  margin-top: 36px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+article h3 + p,
+article h4 + p {
   margin-top: 6px;
 }
 
